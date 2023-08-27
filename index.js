@@ -36,7 +36,38 @@ const maxOfThree = function (num1, num2, num3) {
     } else {
         return false;
     }
-
+  }
 
   console.log(isCharAVowel("y"));
   console.log(isCharAVowel("o"));
+
+  /* 4. Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]);would return 11.*/
+  const sumArray = function(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+      sum += array[i];
+    }
+    return sum;
+  };
+  
+  const numbers = [78, 8, 50];
+  const result = sumArray(numbers);
+  console.log(result); 
+
+/*Define a function, as a function declaration, multiplyArraythat takes an array of numbers and returns the product those numbers. For example, multiplyArray([2, 4, 5]);would return 40.*/
+
+function multiplyArray(array) {
+  let product = 1;
+  for (let i = 0; i < array.length; i++) {
+    product *= array[i];
+  }
+  return product;
+}
+
+const numbs = [9, 14, 5];
+const results = multiplyArray(numbs);
+console.log(results); 
+
+
+  
+
